@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clothes Color Combiner</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Clothes Color Combiner</h1>
+    <p>Select a skin tone, shirt and pant to see suggested color combinations.</p>
+  </header>
+
+  <main class="container">
+    <section class="selectors">
+      <div class="select-box">
+        <h3>1. Choose Skin Tone</h3>
+        <div class="options" id="skin-options">
+          <button data-id="skin1"><img src="images/skin1.jpg" alt="Skin 1"><span>Light</span></button>
+          <button data-id="skin2"><img src="images/skin2.jpg" alt="Skin 2"><span>Medium</span></button>
+          <button data-id="skin3"><img src="images/skin3.jpg" alt="Skin 3"><span>Dark</span></button>
+        </div>
+      </div>
+
+      <div class="select-box">
+        <h3>2. Choose Shirt</h3>
+        <div class="options" id="shirt-options">
+          <button data-id="shirt1"><img src="images/shirt1.jpg" alt="Shirt 1"><span>White Shirt</span></button>
+          <button data-id="shirt2"><img src="images/shirt2.jpg" alt="Shirt 2"><span>Teal Shirt</span></button>
+          <button data-id="shirt3"><img src="images/shirt3.jpg" alt="Shirt 3"><span>Maroon Shirt</span></button>
+        </div>
+      </div>
+
+      <div class="select-box">
+        <h3>3. Choose Pant</h3>
+        <div class="options" id="pant-options">
+          <button data-id="pant1"><img src="images/pant1.jpg" alt="Pant 1"><span>Blue Jeans</span></button>
+          <button data-id="pant2"><img src="images/pant2.jpg" alt="Pant 2"><span>Black Pant</span></button>
+          <button data-id="pant3"><img src="images/pant3.jpg" alt="Pant 3"><span>Khaki Pant</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="preview">
+      <h2>Preview & Suggestion</h2>
+      <div class="preview-box">
+        <div class="person">
+          <img id="skin-preview" src="images/skin1.jpg" alt="skin">
+          <img id="shirt-preview" class="overlay" src="images/shirt1.jpg" alt="shirt">
+          <img id="pant-preview" class="overlay" src="images/pant1.jpg" alt="pant">
+        </div>
+        <div class="suggestion" id="suggestion">
+          <h3>Suggested Combination</h3>
+          <p id="suggest-text">Choose items to see a suggestion.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Tip: Use contrasting accents for CTA — like <strong>#F97316</strong> or <strong>#E63946</strong>.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
